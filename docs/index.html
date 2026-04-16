@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome AI, Innovation & Technology — The Ultimate AI Resource Hub</title>
+    <meta name="description" content="The most comprehensive, curated resource hub for the age of artificial intelligence. 500+ tools, models, datasets, courses, and communities — all in one place.">
+    <meta name="keywords" content="AI, artificial intelligence, machine learning, deep learning, LLMs, GPT, Claude, Gemini, open source, developer tools, AI resources">
+    <meta name="author" content="CodeBeez Innovation / Abid Redwan">
+    <meta property="og:title" content="Awesome AI, Innovation & Technology">
+    <meta property="og:description" content="The most comprehensive, curated resource hub for the age of artificial intelligence.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/aredwan-xyz/codebeez-ultimate-innovation">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* ========== CSS Custom Properties / Design Tokens ========== */
+        :root {
+            --bg-primary: #06060f;
+            --bg-secondary: #0c0c1d;
+            --bg-card: rgba(15, 15, 35, 0.6);
+            --bg-card-hover: rgba(25, 25, 55, 0.8);
+            --bg-glass: rgba(255, 255, 255, 0.03);
+            --bg-glass-border: rgba(255, 255, 255, 0.06);
+
+            --text-primary: #e8e8f0;
+            --text-secondary: #9a9ab8;
+            --text-muted: #5e5e7e;
+
+            --accent-blue: #4f7df5;
+            --accent-cyan: #36d6e7;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --accent-amber: #f59e0b;
+            --accent-emerald: #10b981;
+
+            --gradient-hero: linear-gradient(135deg, #4f7df5 0%, #8b5cf6 40%, #ec4899 100%);
+            --gradient-card-border: linear-gradient(135deg, rgba(79, 125, 245, 0.3), rgba(139, 92, 246, 0.3), rgba(236, 72, 153, 0.1));
+            --gradient-glow: radial-gradient(circle at 50% 50%, rgba(79, 125, 245, 0.15), transparent 70%);
+
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 16px 64px rgba(0, 0, 0, 0.5);
+            --shadow-glow-blue: 0 0 40px rgba(79, 125, 245, 0.2);
+            --shadow-glow-purple: 0 0 40px rgba(139, 92, 246, 0.2);
+
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+        }
+
+        /* ========== Reset & Base ========== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ========== Utility Classes ========== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent-cyan);
+            margin-bottom: 16px;
+            padding: 6px 16px;
+            background: rgba(54, 214, 231, 0.08);
+            border: 1px solid rgba(54, 214, 231, 0.15);
+            border-radius: 100px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 640px;
+            line-height: 1.7;
+        }
+
+        .gradient-text {
+            background: var(--gradient-hero);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ========== Animated Background Particles ========== */
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* ========== Navigation ========== */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 16px 0;
+            transition: var(--transition-smooth);
+        }
+
+        .nav.scrolled {
+            background: rgba(6, 6, 15, 0.85);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid var(--bg-glass-border);
+            padding: 10px 0;
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .nav-logo img {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+        }
+
+        .nav-logo span {
+            background: var(--gradient-hero);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: var(--transition-fast);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-hero);
+            border-radius: 2px;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            background: var(--gradient-hero);
+            color: white;
+            transition: var(--transition-smooth);
+            box-shadow: 0 4px 20px rgba(79, 125, 245, 0.3);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(79, 125, 245, 0.4);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* ========== Hero Section ========== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 120px 0 80px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: var(--gradient-glow);
+            filter: blur(80px);
+            animation: pulse-glow 6s ease-in-out infinite alternate;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(to top, var(--bg-primary), transparent);
+            z-index: 1;
+        }
+
+        @keyframes pulse-glow {
+            0% { opacity: 0.5; transform: translateX(-50%) scale(1); }
+            100% { opacity: 0.8; transform: translateX(-50%) scale(1.15); }
+        }
+
+        .hero-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            border-radius: 100px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            background: rgba(139, 92, 246, 0.08);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #c4b5fd;
+            margin-bottom: 32px;
+            animation: fade-in-up 0.8s ease-out;
+        }
+
+        .hero-badge .pulse-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-emerald);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.5); }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.08;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+            animation: fade-in-up 0.8s ease-out 0.1s backwards;
+        }
+
+        .hero-title .line {
+            display: block;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.05rem, 2vw, 1.25rem);
+            color: var(--text-secondary);
+            max-width: 620px;
+            margin: 0 auto 40px;
+            line-height: 1.75;
+            animation: fade-in-up 0.8s ease-out 0.2s backwards;
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            animation: fade-in-up 0.8s ease-out 0.3s backwards;
+        }
+
+        @keyframes fade-in-up {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 36px;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 1rem;
+            background: var(--gradient-hero);
+            color: white;
+            transition: var(--transition-smooth);
+            box-shadow: 0 4px 24px rgba(79, 125, 245, 0.35);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(79, 125, 245, 0.45);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 36px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-primary);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(8px);
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            border-color: rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Hero Stats Bar */
+        .hero-stats {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 72px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            animation: fade-in-up 0.8s ease-out 0.5s backwards;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .hero-stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: 4px;
+        }
+
+        /* ========== Scrolling Logos / Marquee ========== */
+        .marquee-section {
+            padding: 60px 0;
+            border-top: 1px solid var(--bg-glass-border);
+            border-bottom: 1px solid var(--bg-glass-border);
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+        }
+
+        .marquee-label {
+            text-align: center;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+
+        .marquee-track {
+            display: flex;
+            animation: marquee 40s linear infinite;
+            width: max-content;
+        }
+
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        .marquee-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 28px;
+            margin: 0 12px;
+            background: var(--bg-glass);
+            border: 1px solid var(--bg-glass-border);
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            transition: var(--transition-fast);
+        }
+
+        .marquee-item:hover {
+            color: var(--text-primary);
+            border-color: rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .marquee-item .emoji {
+            font-size: 1.2rem;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* ========== Categories Grid ========== */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 56px;
+        }
+
+        .category-card {
+            position: relative;
+            padding: 32px;
+            border-radius: var(--radius-lg);
+            background: var(--bg-card);
+            border: 1px solid var(--bg-glass-border);
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            overflow: hidden;
+            group: true;
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--card-accent, var(--gradient-hero));
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .category-card:hover {
+            transform: translateY(-4px);
+            background: var(--bg-card-hover);
+            border-color: rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .category-card:hover::before {
+            opacity: 1;
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-md);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            background: var(--icon-bg, rgba(79, 125, 245, 0.1));
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .card-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            padding: 4px 10px;
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .card-arrow {
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            transition: var(--transition-smooth);
+        }
+
+        .category-card:hover .card-arrow {
+            color: var(--accent-blue);
+            transform: translate(4px, -4px);
+        }
+
+        /* ========== Stats / Numbers Section ========== */
+        .stats-section {
+            position: relative;
+            z-index: 2;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 56px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 40px 24px;
+            border-radius: var(--radius-lg);
+            background: var(--bg-card);
+            border: 1px solid var(--bg-glass-border);
+            transition: var(--transition-smooth);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* ========== Timeline Section ========== */
+        .timeline {
+            position: relative;
+            margin-top: 56px;
+            padding-left: 32px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent-blue), var(--accent-purple), var(--accent-pink), transparent);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 32px;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: var(--transition-smooth);
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 8px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            border: 3px solid var(--bg-primary);
+            box-shadow: 0 0 0 3px rgba(79, 125, 245, 0.3);
+        }
+
+        .timeline-year {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            margin-bottom: 4px;
+        }
+
+        .timeline-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .timeline-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ========== Featured Tools Grid ========== */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 56px;
+        }
+
+        .tool-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px 24px;
+            border-radius: var(--radius-md);
+            background: var(--bg-card);
+            border: 1px solid var(--bg-glass-border);
+            transition: var(--transition-smooth);
+        }
+
+        .tool-card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(255, 255, 255, 0.1);
+            transform: translateX(4px);
+        }
+
+        .tool-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            background: rgba(79, 125, 245, 0.1);
+        }
+
+        .tool-info h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .tool-info p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* ========== CTA Section ========== */
+        .cta-section {
+            text-align: center;
+            position: relative;
+        }
+
+        .cta-card {
+            padding: 80px 48px;
+            border-radius: var(--radius-xl);
+            background: linear-gradient(135deg, rgba(79, 125, 245, 0.1), rgba(139, 92, 246, 0.08), rgba(236, 72, 153, 0.05));
+            border: 1px solid rgba(79, 125, 245, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 30%, rgba(79, 125, 245, 0.06), transparent 50%),
+                        radial-gradient(circle at 70% 70%, rgba(139, 92, 246, 0.06), transparent 50%);
+            animation: rotate-gradient 20s linear infinite;
+        }
+
+        @keyframes rotate-gradient {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .cta-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .cta-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 0 auto 36px;
+            line-height: 1.7;
+        }
+
+        .cta-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* ========== Footer ========== */
+        .footer {
+            padding: 60px 0 32px;
+            border-top: 1px solid var(--bg-glass-border);
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-top: 12px;
+            max-width: 320px;
+        }
+
+        .footer-col h4 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            transition: var(--transition-fast);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 24px;
+            border-top: 1px solid var(--bg-glass-border);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 16px;
+        }
+
+        .footer-socials a {
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-glass);
+            border: 1px solid var(--bg-glass-border);
+            font-size: 1.1rem;
+            transition: var(--transition-fast);
+        }
+
+        .footer-socials a:hover {
+            background: rgba(79, 125, 245, 0.15);
+            border-color: rgba(79, 125, 245, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* ========== Scroll animations ========== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 1024px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 80px 0;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(6, 6, 15, 0.95);
+                backdrop-filter: blur(20px);
+                padding: 24px;
+                border-bottom: 1px solid var(--bg-glass-border);
+                gap: 16px;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 140px 0 80px;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .cta-card {
+                padding: 48px 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Animated Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <img src="assets/logo.png" alt="Awesome AI Logo">
+                <span>Awesome AI</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#stats">Impact</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#tools">Tools</a></li>
+            </ul>
+            <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation" class="nav-cta" id="nav-github-btn" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                Star on GitHub
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                Open Source · Community Driven · Always Updated
+            </div>
+
+            <h1 class="hero-title">
+                <span class="line">The <span class="gradient-text">Ultimate</span> Resource Hub</span>
+                <span class="line">for <span class="gradient-text">AI & Innovation</span></span>
+            </h1>
+
+            <p class="hero-subtitle">
+                500+ curated tools, models, datasets, courses, and communities — meticulously organized for researchers, engineers, builders, and the endlessly curious.
+            </p>
+
+            <div class="hero-actions">
+                <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation" class="btn-primary" id="hero-explore-btn" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    Explore the List
+                </a>
+                <a href="#categories" class="btn-secondary" id="hero-browse-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    Browse Categories
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value gradient-text" id="stat-resources">500+</div>
+                    <div class="hero-stat-label">Resources</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value gradient-text" id="stat-categories">25+</div>
+                    <div class="hero-stat-label">Categories</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value gradient-text" id="stat-contributors">Open</div>
+                    <div class="hero-stat-label">Source</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value gradient-text" id="stat-updated">2025</div>
+                    <div class="hero-stat-label">Updated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrolling Marquee -->
+    <section class="marquee-section" id="marquee">
+        <p class="marquee-label">Covering the entire AI ecosystem</p>
+        <div class="marquee-track" id="marquee-track">
+            <div class="marquee-item"><span class="emoji">🤖</span> LLMs & Foundation Models</div>
+            <div class="marquee-item"><span class="emoji">🧠</span> Research Labs</div>
+            <div class="marquee-item"><span class="emoji">🛠️</span> Developer Tools</div>
+            <div class="marquee-item"><span class="emoji">🔗</span> APIs & Platforms</div>
+            <div class="marquee-item"><span class="emoji">🖼️</span> Vision & Multimodal</div>
+            <div class="marquee-item"><span class="emoji">🎵</span> Audio & Music AI</div>
+            <div class="marquee-item"><span class="emoji">🎬</span> Video Generation</div>
+            <div class="marquee-item"><span class="emoji">🤗</span> Open Source Models</div>
+            <div class="marquee-item"><span class="emoji">🧬</span> AI in Science</div>
+            <div class="marquee-item"><span class="emoji">🏥</span> Healthcare AI</div>
+            <div class="marquee-item"><span class="emoji">💰</span> FinTech AI</div>
+            <div class="marquee-item"><span class="emoji">⚖️</span> Safety & Ethics</div>
+            <div class="marquee-item"><span class="emoji">📚</span> Courses</div>
+            <div class="marquee-item"><span class="emoji">🎯</span> Prompt Engineering</div>
+            <div class="marquee-item"><span class="emoji">💼</span> AI Careers</div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-item"><span class="emoji">🤖</span> LLMs & Foundation Models</div>
+            <div class="marquee-item"><span class="emoji">🧠</span> Research Labs</div>
+            <div class="marquee-item"><span class="emoji">🛠️</span> Developer Tools</div>
+            <div class="marquee-item"><span class="emoji">🔗</span> APIs & Platforms</div>
+            <div class="marquee-item"><span class="emoji">🖼️</span> Vision & Multimodal</div>
+            <div class="marquee-item"><span class="emoji">🎵</span> Audio & Music AI</div>
+            <div class="marquee-item"><span class="emoji">🎬</span> Video Generation</div>
+            <div class="marquee-item"><span class="emoji">🤗</span> Open Source Models</div>
+            <div class="marquee-item"><span class="emoji">🧬</span> AI in Science</div>
+            <div class="marquee-item"><span class="emoji">🏥</span> Healthcare AI</div>
+            <div class="marquee-item"><span class="emoji">💰</span> FinTech AI</div>
+            <div class="marquee-item"><span class="emoji">⚖️</span> Safety & Ethics</div>
+            <div class="marquee-item"><span class="emoji">📚</span> Courses</div>
+            <div class="marquee-item"><span class="emoji">🎯</span> Prompt Engineering</div>
+            <div class="marquee-item"><span class="emoji">💼</span> AI Careers</div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section" id="categories">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-label">🗂️ Browse by Category</div>
+                <h2 class="section-title">
+                    Every corner of <span class="gradient-text">AI, explored</span>
+                </h2>
+                <p class="section-subtitle">
+                    From cutting-edge language models to AI safety research — dive into the topics that matter most to you.
+                </p>
+            </div>
+
+            <div class="categories-grid">
+                <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-foundation-models--llms" target="_blank" rel="noopener" class="category-card reveal" style="--icon-bg: rgba(79, 125, 245, 0.1); --card-accent: linear-gradient(90deg, #4f7df5, #36d6e7);">
+                    <div class="card-icon" style="color: #4f7df5;">🤖</div>
+                    <h3 class="card-title">Foundation Models & LLMs</h3>
+                    <p class="card-desc">GPT-4o, Claude 4, Gemini 2.5, Llama 4, Mistral, DeepSeek and every frontier model in one place.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">40+ Models</span>
+                        <span class="card-tag">Frontier & Open</span>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-developer-tools--frameworks" target="_blank" rel="noopener" class="category-card reveal" style="--icon-bg: rgba(16, 185, 129, 0.1); --card-accent: linear-gradient(90deg, #10b981, #36d6e7);">
+                    <div class="card-icon" style="color: #10b981;">🛠️</div>
+                    <h3 class="card-title">Developer Tools & Frameworks</h3>
+                    <p class="card-desc">LangChain, LlamaIndex, Cursor, vectorDBs, local inference, and the toolchain that powers AI builders.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">30+ Tools</span>
+                        <span class="card-tag">Agents & RAG</span>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-multimodal--vision-ai" target="_blank" rel="noopener" class="category-card reveal" style="--icon-bg: rgba(236, 72, 153, 0.1); --card-accent: linear-gradient(90deg, #ec4899, #f59e0b);">
+                    <div class="card-icon" style="color: #ec4899;">🖼️</div>
+                    <h3 class="card-title">Multimodal & Vision AI</h3>
+                    <p class="card-desc">Midjourney, DALL-E 3, Flux, Stable Diffusion, and the creative AI revolution in images and design.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">20+ Tools</span>
+                        <span class="card-tag">Image & Design</span>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-ai-research-labs" target="_blank" rel="noopener" class="category-card reveal" style="--icon-bg: rgba(139, 92, 246, 0.1); --card-accent: linear-gradient(90deg, #8b5cf6, #4f7df5);">
+                    <div class="card-icon" style="color: #8b5cf6;">🧠</div>
+                    <h3 class="card-title">AI Research Labs</h3>
+                    <p class="card-desc">Anthropic, OpenAI, DeepMind, Meta AI, Mistral — the organizations pushing the frontier forward.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">14 Labs</span>
+                        <span class="card-tag">Frontier Research</span>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-ai-safety-ethics--alignment" target="_blank" rel="noopener" class="category-card reveal" style="--icon-bg: rgba(245, 158, 11, 0.1); --card-accent: linear-gradient(90deg, #f59e0b, #ef4444);">
+                    <div class="card-icon" style="color: #f59e0b;">⚖️</div>
+                    <h3 class="card-title">AI Safety & Ethics</h3>
+                    <p class="card-desc">Alignment research, constitutional AI, bias mitigation, and the quest to build AI that's safe and fair.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">12+ Orgs</span>
+                        <span class="card-tag">Alignment</span>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-courses--learning-paths" target="_blank" rel="noopener" class="category-card reveal" style="--icon-bg: rgba(54, 214, 231, 0.1); --card-accent: linear-gradient(90deg, #36d6e7, #10b981);">
+                    <div class="card-icon" style="color: #36d6e7;">📚</div>
+                    <h3 class="card-title">Courses & Learning</h3>
+                    <p class="card-desc">Stanford CS229, fast.ai, deeplearning.ai, certifications, and curated paths from beginner to expert.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">20+ Courses</span>
+                        <span class="card-tag">Free & Paid</span>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-ai-in-science--research" target="_blank" rel="noopener" class="category-card reveal" style="--icon-bg: rgba(99, 102, 241, 0.1); --card-accent: linear-gradient(90deg, #6366f1, #a78bfa);">
+                    <div class="card-icon" style="color: #6366f1;">🧬</div>
+                    <h3 class="card-title">AI in Science</h3>
+                    <p class="card-desc">AlphaFold, protein models, climate AI, weather forecasting — accelerating humanity's greatest discoveries.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">10+ Projects</span>
+                        <span class="card-tag">Life & Climate</span>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-research-papers--journals" target="_blank" rel="noopener" class="category-card reveal" style="--icon-bg: rgba(248, 113, 113, 0.1); --card-accent: linear-gradient(90deg, #f87171, #fbbf24);">
+                    <div class="card-icon" style="color: #f87171;">🔬</div>
+                    <h3 class="card-title">Research & Papers</h3>
+                    <p class="card-desc">Landmark papers from "Attention Is All You Need" to DeepSeek-R1, plus where to find cutting-edge research.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">10+ Landmark</span>
+                        <span class="card-tag">Top Conferences</span>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-careers--jobs" target="_blank" rel="noopener" class="category-card reveal" style="--icon-bg: rgba(251, 191, 36, 0.1); --card-accent: linear-gradient(90deg, #fbbf24, #f97316);">
+                    <div class="card-icon" style="color: #fbbf24;">💼</div>
+                    <h3 class="card-title">Careers & Jobs</h3>
+                    <p class="card-desc">AI job boards, role definitions, salary data, and everything you need to launch your AI career.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">Salaries</span>
+                        <span class="card-tag">Job Boards</span>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Impact Section -->
+    <section class="section stats-section" id="stats">
+        <div class="container">
+            <div class="reveal" style="text-align: center;">
+                <div class="section-label" style="margin: 0 auto;">📊 By the Numbers</div>
+                <h2 class="section-title" style="text-align: center;">
+                    <span class="gradient-text">The scope</span> of this collection
+                </h2>
+                <p class="section-subtitle" style="margin: 0 auto;">
+                    Continuously updated with the latest breakthroughs, tools, and resources across the AI landscape.
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-number gradient-text" data-count="500">0</div>
+                    <div class="stat-label">Curated Resources</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number" style="color: var(--accent-cyan);" data-count="25">0</div>
+                    <div class="stat-label">Topic Categories</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number" style="color: var(--accent-emerald);" data-count="14">0</div>
+                    <div class="stat-label">Research Labs Covered</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number" style="color: var(--accent-amber);" data-count="40">0</div>
+                    <div class="stat-label">AI Models Listed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section" id="timeline">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-label">⏳ The AI Timeline</div>
+                <h2 class="section-title">
+                    Key moments that <span class="gradient-text">shaped AI</span>
+                </h2>
+                <p class="section-subtitle">
+                    From the Transformer paper to the age of autonomous agents — the milestones that matter.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2017</div>
+                    <div class="timeline-title">⚡ Attention Is All You Need</div>
+                    <div class="timeline-desc">The Transformer architecture is published, laying the foundation for every modern AI model.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-title">📖 BERT Redefines NLP</div>
+                    <div class="timeline-desc">Bidirectional pre-training sets new benchmarks across all language understanding tasks.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-title">🧠 GPT-3 — Few-Shot Emergence</div>
+                    <div class="timeline-desc">175B parameters demonstrate that scale unlocks emergent capabilities no one predicted.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-title">💬 ChatGPT Breaks the Internet</div>
+                    <div class="timeline-desc">100 million users in 2 months. The fastest-growing consumer app in history. AI enters mainstream consciousness.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-title">🦙 Open Source Fights Back</div>
+                    <div class="timeline-desc">Llama 2 opens the floodgates. Mistral, Qwen, and dozens of open models prove open-source can compete.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-title">🎬 AI Creates Cinema</div>
+                    <div class="timeline-desc">Sora, Runway Gen-3, and Kling demonstrate photorealistic video generation from text prompts.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-title">🤖 Agents Everywhere</div>
+                    <div class="timeline-desc">AI moves from answering questions to taking actions. Autonomous coding, research, and workflow agents redefine productivity.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools Section -->
+    <section class="section" id="tools">
+        <div class="container">
+            <div class="reveal" style="text-align: center;">
+                <div class="section-label" style="margin: 0 auto;">🔥 Featured Tools</div>
+                <h2 class="section-title" style="text-align: center;">
+                    What <span class="gradient-text">builders</span> are using
+                </h2>
+                <p class="section-subtitle" style="margin: 0 auto;">
+                    The most impactful tools and platforms from our collection — each hand-picked and battle-tested.
+                </p>
+            </div>
+
+            <div class="tools-grid">
+                <a href="https://langchain.com" target="_blank" rel="noopener" class="tool-card reveal">
+                    <div class="tool-icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">🔗</div>
+                    <div class="tool-info">
+                        <h4>LangChain</h4>
+                        <p>LLM application framework</p>
+                    </div>
+                </a>
+                <a href="https://cursor.com" target="_blank" rel="noopener" class="tool-card reveal">
+                    <div class="tool-icon" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6;">⚡</div>
+                    <div class="tool-info">
+                        <h4>Cursor</h4>
+                        <p>AI-first code editor</p>
+                    </div>
+                </a>
+                <a href="https://ollama.com" target="_blank" rel="noopener" class="tool-card reveal">
+                    <div class="tool-icon" style="background: rgba(79, 125, 245, 0.1); color: #4f7df5;">🦙</div>
+                    <div class="tool-info">
+                        <h4>Ollama</h4>
+                        <p>Run LLMs locally</p>
+                    </div>
+                </a>
+                <a href="https://huggingface.co" target="_blank" rel="noopener" class="tool-card reveal">
+                    <div class="tool-icon" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">🤗</div>
+                    <div class="tool-info">
+                        <h4>Hugging Face</h4>
+                        <p>500K+ models & datasets</p>
+                    </div>
+                </a>
+                <a href="https://pinecone.io" target="_blank" rel="noopener" class="tool-card reveal">
+                    <div class="tool-icon" style="background: rgba(54, 214, 231, 0.1); color: #36d6e7;">📌</div>
+                    <div class="tool-info">
+                        <h4>Pinecone</h4>
+                        <p>Managed vector database</p>
+                    </div>
+                </a>
+                <a href="https://vllm.ai" target="_blank" rel="noopener" class="tool-card reveal">
+                    <div class="tool-icon" style="background: rgba(236, 72, 153, 0.1); color: #ec4899;">🚀</div>
+                    <div class="tool-info">
+                        <h4>vLLM</h4>
+                        <p>High-throughput LLM serving</p>
+                    </div>
+                </a>
+                <a href="https://midjourney.com" target="_blank" rel="noopener" class="tool-card reveal">
+                    <div class="tool-icon" style="background: rgba(99, 102, 241, 0.1); color: #6366f1;">🎨</div>
+                    <div class="tool-info">
+                        <h4>Midjourney</h4>
+                        <p>Artistic image generation</p>
+                    </div>
+                </a>
+                <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="tool-card reveal">
+                    <div class="tool-icon" style="background: rgba(248, 113, 113, 0.1); color: #f87171;">🎤</div>
+                    <div class="tool-info">
+                        <h4>ElevenLabs</h4>
+                        <p>Most natural AI voices</p>
+                    </div>
+                </a>
+                <a href="https://wandb.ai" target="_blank" rel="noopener" class="tool-card reveal">
+                    <div class="tool-icon" style="background: rgba(251, 191, 36, 0.1); color: #fbbf24;">📊</div>
+                    <div class="tool-info">
+                        <h4>Weights & Biases</h4>
+                        <p>ML experiment tracking</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" id="cta">
+        <div class="container">
+            <div class="cta-card reveal">
+                <h2 class="cta-title">
+                    Ready to <span class="gradient-text">explore the future</span>?
+                </h2>
+                <p class="cta-subtitle">
+                    Star the repo, explore the resources, and contribute to the most comprehensive AI knowledge base on GitHub.
+                </p>
+                <div class="cta-actions">
+                    <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation" class="btn-primary" id="cta-star-btn" target="_blank" rel="noopener">
+                        ⭐ Star on GitHub
+                    </a>
+                    <a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation/blob/main/CONTRIBUTING.md" class="btn-secondary" id="cta-contribute-btn" target="_blank" rel="noopener">
+                        🤝 Contribute
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <img src="assets/logo.png" alt="Awesome AI Logo">
+                        <span>Awesome AI</span>
+                    </a>
+                    <p>The most comprehensive, curated resource hub for the age of artificial intelligence. Crafted by CodeBeez Innovation.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-foundation-models--llms" target="_blank" rel="noopener">Models & LLMs</a></li>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-developer-tools--frameworks" target="_blank" rel="noopener">Developer Tools</a></li>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-ai-apis--platforms" target="_blank" rel="noopener">APIs & Platforms</a></li>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-courses--learning-paths" target="_blank" rel="noopener">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-research-papers--journals" target="_blank" rel="noopener">Research Papers</a></li>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-datasets--benchmarks" target="_blank" rel="noopener">Datasets</a></li>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-books" target="_blank" rel="noopener">Books</a></li>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation#-podcasts" target="_blank" rel="noopener">Podcasts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></li>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a></li>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation/blob/main/LICENSE" target="_blank" rel="noopener">License (CC0)</a></li>
+                        <li><a href="https://github.com/aredwan-xyz/codebeez-ultimate-innovation/issues" target="_blank" rel="noopener">Issues</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 <a href="https://codebeez.xyz" target="_blank" rel="noopener" style="color: var(--accent-cyan);">CodeBeez Innovation</a> · Maintained by <a href="https://aredwan.com" target="_blank" rel="noopener" style="color: var(--accent-cyan);">Abid Redwan</a></span>
+                <div class="footer-socials">
+                    <a href="https://github.com/aredwan-xyz" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://codebeez.xyz" target="_blank" rel="noopener" aria-label="Website" title="Website">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </a>
+                    <a href="https://aredwan.com" target="_blank" rel="noopener" aria-label="Author" title="Abid Redwan">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ========== Particle Animation ==========
+        (function() {
+            const canvas = document.getElementById('particles-canvas');
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            const PARTICLE_COUNT = 60;
+            const CONNECTION_DIST = 150;
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+
+            function createParticle() {
+                return {
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.4,
+                    vy: (Math.random() - 0.5) * 0.4,
+                    size: Math.random() * 2 + 0.5,
+                    opacity: Math.random() * 0.3 + 0.1
+                };
+            }
+
+            function init() {
+                resize();
+                particles = [];
+                for (let i = 0; i < PARTICLE_COUNT; i++) {
+                    particles.push(createParticle());
+                }
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                particles.forEach((p, i) => {
+                    p.x += p.vx;
+                    p.y += p.vy;
+
+                    if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                    if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+                    // Draw particle
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(79, 125, 245, ${p.opacity})`;
+                    ctx.fill();
+
+                    // Draw connections
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const p2 = particles[j];
+                        const dx = p.x - p2.x;
+                        const dy = p.y - p2.y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+
+                        if (dist < CONNECTION_DIST) {
+                            ctx.beginPath();
+                            ctx.moveTo(p.x, p.y);
+                            ctx.lineTo(p2.x, p2.y);
+                            ctx.strokeStyle = `rgba(79, 125, 245, ${0.06 * (1 - dist / CONNECTION_DIST)})`;
+                            ctx.lineWidth = 0.5;
+                            ctx.stroke();
+                        }
+                    }
+                });
+
+                requestAnimationFrame(animate);
+            }
+
+            window.addEventListener('resize', resize);
+            init();
+            animate();
+        })();
+
+        // ========== Navigation Scroll Effect ==========
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ========== Mobile Menu Toggle ==========
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const navLinks = document.getElementById('nav-links');
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            mobileBtn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+        });
+
+        // Close mobile menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                mobileBtn.textContent = '☰';
+            });
+        });
+
+        // ========== Scroll Reveal Animation ==========
+        const revealElements = document.querySelectorAll('.reveal');
+        const timelineItems = document.querySelectorAll('.timeline-item');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, idx) => {
+                if (entry.isIntersecting) {
+                    // Stagger animation for grid items
+                    const siblings = entry.target.parentElement.querySelectorAll('.reveal');
+                    const index = Array.from(siblings).indexOf(entry.target);
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 80);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2, rootMargin: '0px 0px -50px 0px' });
+
+        timelineItems.forEach(item => timelineObserver.observe(item));
+
+        // ========== Animated Counter ==========
+        const counters = document.querySelectorAll('[data-count]');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.dataset.count);
+                    let current = 0;
+                    const increment = target / 60;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            entry.target.textContent = target + '+';
+                            clearInterval(timer);
+                        } else {
+                            entry.target.textContent = Math.floor(current) + '+';
+                        }
+                    }, 25);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(c => counterObserver.observe(c));
+
+        // ========== Smooth scroll for anchor links ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
