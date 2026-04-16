@@ -1,0 +1,47 @@
+name: Link Checker
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # Every Monday at midnight
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    name: Check all links in README
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: |
+            --verbose
+            --no-progress
+            --timeout 30
+            --max-retries 3
+            --exclude-mail
+            --exclude "linkedin.com"
+            --exclude "twitter.com"
+            --exclude "x.com"
+            '**/*.md'
+          fail: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Issue From File
+        if: env.lychee_exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Broken Links Report
+          content-filepath: ./lychee/out.md
+          labels: |
+            automated
+            links
+            maintenance
