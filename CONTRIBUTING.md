@@ -1,5 +1,7 @@
 # Contributing to Awesome AI, Innovation & Technology
 
+> A **[CodeBeez Innovation](https://codebeez.xyz)** project · Maintained by **[Abid Redwan](https://aredwan.com)** · [GitHub](https://github.com/aredwan-xyz)
+
 First off — **thank you** for taking the time to contribute! 🎉
 
 This project thrives because of people like you. Whether you're fixing a typo, adding a new resource, or suggesting a whole new section, every contribution matters.
@@ -25,7 +27,7 @@ This project adheres to our [Code of Conduct](CODE_OF_CONDUCT.md). By participat
 
 ### 🐛 Reporting Issues
 
-Found a broken link? Know of a better resource? Open an [issue](https://github.com/yourusername/awesome-ai-innovation/issues/new/choose) and use the appropriate template.
+Found a broken link? Know of a better resource? Open an [issue](https://github.com/aredwan-xyz/awesome-ai-innovation/issues/new/choose) and use the appropriate template.
 
 ### ✨ Adding a New Resource
 
@@ -140,7 +142,7 @@ Content here...
 
 ## Questions?
 
-Open an [issue](https://github.com/yourusername/awesome-ai-innovation/issues) or start a [discussion](https://github.com/yourusername/awesome-ai-innovation/discussions). We're happy to help!
+Open an [issue](https://github.com/aredwan-xyz/awesome-ai-innovation/issues) or start a [discussion](https://github.com/aredwan-xyz/awesome-ai-innovation/discussions). We're happy to help!
 
 ---
 

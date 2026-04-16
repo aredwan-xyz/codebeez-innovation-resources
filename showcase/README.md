@@ -1,5 +1,7 @@
 # Project Showcase
 
+> Part of **[Awesome AI, Innovation & Technology](../README.md)** by [CodeBeez Innovation](https://codebeez.xyz) · [Abid Redwan](https://aredwan.com)
+
 Community-built AI projects using the resources in this repository.
 
 > Want your project featured? Open a PR following the template below.
@@ -33,7 +35,7 @@ Community-built AI projects using the resources in this repository.
 To add your project, open a PR that adds a row to the appropriate table using this format:
 
 ```markdown
-| [Project Name](https://github.com/you/repo) | One-line description | Python, Anthropic API | @yourusername |
+| [Project Name](https://github.com/aredwan-xyz) | One-line description | Python, Anthropic API | [@aredwan-xyz](https://github.com/aredwan-xyz) |
 ```
 
 **Requirements:**

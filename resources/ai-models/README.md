@@ -174,4 +174,4 @@ Few-shot: 2-3 examples
 
 ---
 
-*Last updated: April 2025 · [Back to main README](../../README.md)*
+*Last updated: April 2025 · [Back to main README](../../README.md) · by [CodeBeez Innovation](https://codebeez.xyz) & [Abid Redwan](https://aredwan.com)*

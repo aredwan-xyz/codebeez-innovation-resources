@@ -205,4 +205,4 @@ print(f"GSM8K accuracy: {accuracy:.1%}")
 
 ---
 
-*Last updated: April 2025 · [Back to main README](../../README.md)*
+*Last updated: April 2025 · [Back to main README](../../README.md) · by [CodeBeez Innovation](https://codebeez.xyz) & [Abid Redwan](https://aredwan.com)*

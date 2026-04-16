@@ -1,30 +1,33 @@
 <div align="center">
 
 ```
- █████╗ ██╗    ██╗███████╗███████╗ ██████╗ ███╗   ███╗███████╗
-██╔══██╗██║    ██║██╔════╝██╔════╝██╔═══██╗████╗ ████║██╔════╝
-███████║██║ █╗ ██║█████╗  ███████╗██║   ██║██╔████╔██║█████╗  
-██╔══██║██║███╗██║██╔══╝  ╚════██║██║   ██║██║╚██╔╝██║██╔══╝  
-██║  ██║╚███╔███╔╝███████╗███████║╚██████╔╝██║ ╚═╝ ██║███████╗
-╚═╝  ╚═╝ ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
+ ██████╗ ██████╗ ██████╗ ███████╗██████╗ ███████╗███████╗███████╗
+██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔══██╗██╔════╝██╔════╝╚══███╔╝
+██║     ██║   ██║██║  ██║█████╗  ██████╔╝█████╗  █████╗    ███╔╝ 
+██║     ██║   ██║██║  ██║██╔══╝  ██╔══██╗██╔══╝  ██╔══╝   ███╔╝  
+╚██████╗╚██████╔╝██████╔╝███████╗██████╔╝███████╗███████╗███████╗
+ ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═════╝ ╚══════╝╚══════╝╚══════╝
 ```
 
 # ✨ Awesome AI, Innovation & Technology
 
 **The most comprehensive, curated resource hub for the age of artificial intelligence.**
 
+> Crafted by **[CodeBeez Innovation](https://codebeez.xyz)** · Maintained by **[Abid Redwan](https://aredwan.com)**
+
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/awesome-ai-innovation?style=flat-square&color=gold)](https://github.com/yourusername/awesome-ai-innovation/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/yourusername/awesome-ai-innovation?style=flat-square)](https://github.com/yourusername/awesome-ai-innovation/network)
-[![Contributors](https://img.shields.io/github/contributors/yourusername/awesome-ai-innovation?style=flat-square)](https://github.com/yourusername/awesome-ai-innovation/graphs/contributors)
-[![Last Commit](https://img.shields.io/github/last-commit/yourusername/awesome-ai-innovation?style=flat-square)](https://github.com/yourusername/awesome-ai-innovation/commits)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/yourusername/awesome-ai-innovation/graphs/commit-activity)
+[![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/aredwan-xyz/awesome-ai-innovation?style=flat-square&color=gold)](https://github.com/aredwan-xyz/awesome-ai-innovation/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/aredwan-xyz/awesome-ai-innovation?style=flat-square)](https://github.com/aredwan-xyz/awesome-ai-innovation/network)
+[![Contributors](https://img.shields.io/github/contributors/aredwan-xyz/awesome-ai-innovation?style=flat-square)](https://github.com/aredwan-xyz/awesome-ai-innovation/graphs/contributors)
+[![Last Commit](https://img.shields.io/github/last-commit/aredwan-xyz/awesome-ai-innovation?style=flat-square)](https://github.com/aredwan-xyz/awesome-ai-innovation/commits)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/aredwan-xyz/awesome-ai-innovation/graphs/commit-activity)
+[![CodeBeez](https://img.shields.io/badge/by-CodeBeez_Innovation-F7C948?style=flat-square&logo=honeybadger&logoColor=black)](https://codebeez.xyz)
 
 *Curated by humans. Amplified by AI. Built for builders.*
 
-[🌐 Website](#) · [💬 Discord](#) · [🐦 Twitter](#) · [📧 Newsletter](#)
+[🌐 CodeBeez.xyz](https://codebeez.xyz) · [👤 Abid Redwan](https://aredwan.com) · [🐙 GitHub](https://github.com/aredwan-xyz)
 
 </div>
 
@@ -870,7 +873,7 @@ This list is released under **[CC0 1.0 Universal](LICENSE)** — no rights reser
 
 **[⬆ Back to Top](#-awesome-ai-innovation--technology)**
 
-Made with ❤️ by the community · Updated weekly · [Star ⭐ to support](https://github.com/yourusername/awesome-ai-innovation)
+Made with ❤️ by **[CodeBeez Innovation](https://codebeez.xyz)** · Maintained by **[Abid Redwan](https://aredwan.com)** · [Star ⭐ to support](https://github.com/aredwan-xyz/awesome-ai-innovation)
 
 *"The best way to predict the future is to build it." — Alan Kay*
 

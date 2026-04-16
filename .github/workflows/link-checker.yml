@@ -1,3 +1,4 @@
+# Awesome AI Innovation · CodeBeez Innovation (codebeez.xyz) · Abid Redwan (aredwan.com)
 name: Link Checker
 
 on:
@@ -18,7 +19,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Link Checker
+      - # Awesome AI Innovation · CodeBeez Innovation (codebeez.xyz) · Abid Redwan (aredwan.com)
+name: Link Checker
         uses: lycheeverse/lychee-action@v1
         with:
           args: |
