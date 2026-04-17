@@ -10,7 +10,7 @@
  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═════╝ ╚══════╝╚══════╝╚══════╝
 ```
 
-# ✨ Awesome AI, Innovation & Technology
+# ✨ CodeBeez Ultimate Innovation & Technology Resources
 
 **The most comprehensive, curated resource hub for the age of artificial intelligence.**
 
