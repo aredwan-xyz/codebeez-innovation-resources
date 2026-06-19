@@ -92,7 +92,7 @@ Are you an ML researcher?
 
 - **[Fast.ai Part 1 & 2](https://course.fast.ai)** — Actually free (best practical DL)
 - **[Zero to Mastery](https://zerotomastery.io/courses/)** — $30/mo, high quality
-- **[Maven Courses](https://maven.com/categories/ai-ml)** — Cohort-based, expensive but great networking
+- **[Maven Courses](https://maven.com)** — Cohort-based, expensive but great networking
 
 ---
 

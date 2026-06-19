@@ -188,7 +188,7 @@ Examples:
 
 - [Anthropic Documentation](https://docs.anthropic.com)
 - [Andrej Karpathy YouTube](https://youtube.com/@AndrejKarpathy)
-- [3Blue1Brown Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
+- [3Blue1Brown Neural Networks](https://www.3blue1brown.com)
 - [Learn Prompting](https://learnprompting.org)
 - [fast.ai](https://fast.ai)
 - [Full Stack LLM Bootcamp](https://fullstackdeeplearning.com)

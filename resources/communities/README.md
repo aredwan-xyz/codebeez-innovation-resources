@@ -57,7 +57,7 @@ A guide to finding your tribe in the AI ecosystem.
 
 - **[ML Collective](https://mlcollective.org)** — Community for independent ML researchers
 - **[Eleuther AI](https://eleutherai.org)** — Decentralized research collective
-- **[BigScience](https://bigscience.huggingface.co)** — 1,000 researchers, open-source LLMs
+- **[BigScience](https://huggingface.co/bigscience)** — 1,000 researchers, open-source LLMs
 - **[LAION](https://laion.ai)** — Open datasets for AI
 
 ---
@@ -108,7 +108,7 @@ A guide to finding your tribe in the AI ecosystem.
 ### Hackathons & Competitions
 
 - **[Kaggle Competitions](https://kaggle.com/competitions)** — Ongoing ML competitions with prizes
-- **[Hugging Face Sprints](https://huggingface.co/docs/hub/competitions)** — Open source AI events
+- **[Hugging Face Sprints](https://huggingface.co/competitions)** — Open source AI events
 - **[Lablab.ai Hackathons](https://lablab.ai)** — AI hackathons (online, frequent)
 - **[MLH Hackathons](https://mlh.io)** — Student hackathons with AI tracks
 - **[AI Grant](https://aigrant.com)** — Grants for AI builders

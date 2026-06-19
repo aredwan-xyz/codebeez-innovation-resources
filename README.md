@@ -266,7 +266,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 | [**Hugging Face Inference**](https://huggingface.co/inference-api) | Any HF model | Yes |
 | [**Fireworks AI**](https://fireworks.ai) | Fast open model inference | Yes |
 | [**Perplexity AI API**](https://docs.perplexity.ai) | Real-time search-augmented LLMs | No |
-| [**Cohere API**](https://cohere.com/api) | RAG, reranking, embeddings | Yes |
+| [**Cohere API**](https://docs.cohere.com) | RAG, reranking, embeddings | Yes |
 
 ### AI Application Platforms
 
@@ -349,7 +349,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 - **[Luma Dream Machine](https://lumalabs.ai/dream-machine)** — Fast realistic video
 - **[Pika Labs](https://pika.art)** — Versatile AI video generation
 - **[Vidu](https://vidu.io)** — Chinese video generation frontier
-- **[Wan 2.1](https://wanvideo.com)** — Open-source video generation
+- **[Wan 2.1](https://github.com/Wan-Video/Wan2.1)** — Open-source video generation
 
 ---
 
@@ -404,7 +404,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 > Saving lives with intelligence.
 
 - **[FDA AI/ML Action Plan](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices)** — Regulatory framework
-- **[Google Health AI](https://health.google/health-research/imaging/)** — Medical imaging AI
+- **[Google Health AI](https://health.google)** — Medical imaging AI
 - **[PathAI](https://pathai.com)** — AI-powered pathology
 - **[Tempus](https://tempus.com)** — AI for clinical decision support
 - **[Flatiron Health](https://flatiron.com)** — Oncology data and AI
@@ -417,7 +417,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 
 > Intelligent capital.
 
-- **[Bloomberg GPT](https://bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-purpose-built-finance/)** — Finance-domain LLM
+- **[Bloomberg GPT](https://arxiv.org/abs/2303.17564)** — Finance-domain LLM
 - **[FinGPT](https://github.com/AI4Finance-Foundation/FinGPT)** — Open-source financial LLMs
 - **[Alpaca](https://alpaca.markets)** — AI-powered trading API
 - **[Numerai](https://numer.ai)** — AI hedge fund tournament
@@ -436,7 +436,6 @@ This repository is a living, community-driven collection of the **best AI tools,
 - **[LessWrong](https://lesswrong.com)** — Rationalist community on AI risk
 - **[Center for AI Safety (CAIS)](https://safe.ai)** — Reducing AI catastrophic risks
 - **[Machine Intelligence Research Institute (MIRI)](https://intelligence.org)** — AGI alignment research
-- **[Future of Humanity Institute (FHI)](https://www.fhi.ox.ac.uk)** — Oxford's existential risk research
 - **[AI Safety Institute (UK)](https://www.gov.uk/government/organisations/ai-safety-institute)** — Government AI safety body
 - **[NIST AI RMF](https://www.nist.gov/artificial-intelligence)** — AI risk management framework
 
@@ -792,7 +791,6 @@ This repository is a living, community-driven collection of the **best AI tools,
 ### Job Boards
 
 - **[AI Jobs (aiJobs.net)](https://aijobs.net)** — Dedicated AI job board
-- **[MLjobs](https://mljobs.com)** — Machine learning focused
 - **[Levels.fyi AI Jobs](https://levels.fyi)** — Compensation data + listings
 - **[Wellfound (AngelList)](https://wellfound.com)** — Startup AI jobs
 - **[Hugging Face Jobs](https://apply.workable.com/huggingface/)** — Open source AI company

@@ -142,7 +142,7 @@ Content here...
 
 ## Questions?
 
-Open an [issue](https://github.com/aredwan-xyz/codebeez-innovation-resources/issues) or start a [discussion](https://github.com/aredwan-xyz/codebeez-innovation-resources/discussions). We're happy to help!
+Open an [issue](https://github.com/aredwan-xyz/codebeez-innovation-resources/issues/new/choose). We're happy to help!
 
 ---
 

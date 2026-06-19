@@ -197,7 +197,7 @@ print(f"GSM8K accuracy: {accuracy:.1%}")
 
 ## Benchmark Leaderboards
 
-- **[LMSYS Chatbot Arena](https://chat.lmsys.org)** — Human preference ranking (most trusted)
+- **[LMSYS Chatbot Arena](https://lmarena.ai)** — Human preference ranking (most trusted)
 - **[Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)** — Open models
 - **[Papers With Code SOTA](https://paperswithcode.com/sota)** — Task-specific rankings
 - **[BIG-Code Models Leaderboard](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)** — Coding models

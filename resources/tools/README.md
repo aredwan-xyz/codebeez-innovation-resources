@@ -113,7 +113,7 @@ npm install @anthropic-ai/sdk openai @google/generative-ai
 ### Document Parsing
 
 - **[Unstructured](https://unstructured.io)** — Parse PDFs, Word, HTML, images to text
-- **[LlamaParse](https://llamaindex.ai/llama-parse)** — Advanced PDF parsing for RAG
+- **[LlamaParse](https://www.llamaindex.ai/llamaparse)** — Advanced PDF parsing for RAG
 - **[Docling](https://github.com/DS4SD/docling)** — IBM's document conversion library
 - **[PyMuPDF](https://pymupdf.readthedocs.io)** — Fast PDF processing in Python
 - **[Marker](https://github.com/VikParuchuri/marker)** — PDF to markdown with high accuracy
@@ -186,7 +186,7 @@ npm install @anthropic-ai/sdk openai @google/generative-ai
 ### Editing & Manipulation
 
 - **[Inpaint-Anything](https://github.com/geekyutao/Inpaint-Anything)** — Segment + inpaint any object
-- **[InstantID](https://github.com/InstantX-Team/InstantID)** — Identity-preserving generation
+- **[InstantID](https://github.com/instantX-research/InstantID)** — Identity-preserving generation
 - **[IP-Adapter](https://github.com/tencent-ailab/IP-Adapter)** — Image prompt adapter
 
 ---
@@ -196,7 +196,7 @@ npm install @anthropic-ai/sdk openai @google/generative-ai
 - **[Guardrails AI](https://guardrailsai.com)** — Validate and correct LLM outputs
 - **[NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)** — NVIDIA's safety rails
 - **[Rebuff](https://github.com/protectai/rebuff)** — Prompt injection detector
-- **[LLM Guard](https://llm-guard.com)** — Security toolkit for LLM interactions
+- **[LLM Guard](https://github.com/protectai/llm-guard)** — Security toolkit for LLM interactions
 
 ---
 
