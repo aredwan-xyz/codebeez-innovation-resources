@@ -1,3 +1,4 @@
+
 <div align="center">
 
 ```
@@ -9,11 +10,11 @@
  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═════╝ ╚══════╝╚══════╝╚══════╝
 ```
 
-# ✨ Awesome AI, Innovation & Technology
+# ⚡️ CodeBeez Ultimate Innovation & Technology Resources 📜
 
 **The most comprehensive, curated resource hub for the age of artificial intelligence.**
 
-> Crafted by **[CodeBeez Innovation](https://codebeez.xyz)** · Maintained by **[Abid Redwan](https://aredwan.com)**
+> Crafted by **[CodeBeez](https://codebeez.xyz)** · Maintained by **[Abid Redwan](https://aredwan.com)**
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
