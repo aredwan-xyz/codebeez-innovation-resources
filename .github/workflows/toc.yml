@@ -1,0 +1,37 @@
+# Awesome AI Innovation · CodeBeez Innovation (codebeez.xyz) · Abid Redwan (aredwan.com)
+name: Update Table of Contents
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  toc:
+    runs-on: ubuntu-latest
+    name: Regenerate README TOC
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install doctoc
+        run: npm install --global doctoc
+
+      - name: Regenerate TOC
+        run: doctoc --notitle --github README.md
+
+      - name: Commit updated TOC
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'docs: auto-update table of contents [skip ci]'
+          file_pattern: README.md

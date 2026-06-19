@@ -1,0 +1,28 @@
+# Awesome AI Innovation · CodeBeez Innovation (codebeez.xyz) · Abid Redwan (aredwan.com)
+# Path-based auto-labels for pull requests (used by labeler.yml workflow).
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - 'docs/**'
+
+readme:
+  - changed-files:
+      - any-glob-to-any-file: 'README.md'
+
+guides:
+  - changed-files:
+      - any-glob-to-any-file: 'guides/**'
+
+resources:
+  - changed-files:
+      - any-glob-to-any-file: 'resources/**'
+
+showcase:
+  - changed-files:
+      - any-glob-to-any-file: 'showcase/**'
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file: '.github/**'

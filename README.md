@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div align="center">
 
 ```
@@ -42,6 +41,8 @@ This repository is a living, community-driven collection of the **best AI tools,
 
 ## 📖 Table of Contents
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 - [🤖 Foundation Models & LLMs](#-foundation-models--llms)
 - [🧠 AI Research Labs](#-ai-research-labs)
 - [🛠️ Developer Tools & Frameworks](#️-developer-tools--frameworks)
@@ -70,6 +71,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 - [🧪 Playgrounds & Experiments](#-playgrounds--experiments)
 - [🗺️ Roadmaps & Guides](#️-roadmaps--guides)
 - [🤝 Contributing](#-contributing)
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
 
