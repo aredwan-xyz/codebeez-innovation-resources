@@ -14,6 +14,8 @@
 
 # ⚡️ CodeBeez Ultimate Innovation & Technology Resources 📜
 
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=F7C948&center=true&vCenter=true&width=820&height=55&lines=The+Ultimate+AI+Resource+Hub;500%2B+Tools%2C+Models%2C+Datasets+%26+Communities;Curated+by+humans.+Amplified+by+AI.;Built+for+builders." alt="The Ultimate AI Resource Hub" />
+
 **The most comprehensive, curated resource hub for the age of artificial intelligence.**
 
 > Crafted by **[CodeBeez](https://codebeez.xyz)** · Maintained by **[Abid Redwan](https://aredwan.com)**
@@ -947,3 +949,5 @@ Made with ❤️ by **[CodeBeez Innovation](https://codebeez.xyz)** · Maintaine
 *"The best way to predict the future is to build it." — Alan Kay*
 
 </div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24,30&height=120&section=footer" alt="" />
