@@ -1,0 +1,38 @@
+# Awesome AI Innovation · CodeBeez Innovation (codebeez.xyz) · Abid Redwan (aredwan.com)
+name: Stale Issues and PRs
+
+on:
+  schedule:
+    - cron: '0 1 * * *'  # Daily at 01:00 UTC
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-stale: 45
+          days-before-close: 14
+          stale-issue-label: stale
+          stale-pr-label: stale
+          exempt-issue-labels: 'pinned,security,maintenance,automated'
+          exempt-pr-labels: 'pinned,security'
+          stale-issue-message: >
+            This issue has been inactive for 45 days and is now marked as stale.
+            It will be closed in 14 days if there is no further activity. Comment
+            to keep it open. — *CodeBeez Innovation*
+          stale-pr-message: >
+            This pull request has been inactive for 45 days and is now marked as
+            stale. It will be closed in 14 days if there is no further activity.
+            — *CodeBeez Innovation*
+          close-issue-message: >
+            Closing this issue due to prolonged inactivity. Feel free to reopen
+            if it's still relevant. 🙏
+          close-pr-message: >
+            Closing this pull request due to prolonged inactivity. Feel free to
+            reopen when you're ready to continue. 🙏
