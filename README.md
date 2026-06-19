@@ -403,7 +403,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 
 > Saving lives with intelligence.
 
-- **[FDA AI/ML Action Plan](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices)** — Regulatory framework
+- **[FDA AI/ML Action Plan](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices)** — Regulatory framework
 - **[Google Health AI](https://health.google)** — Medical imaging AI
 - **[PathAI](https://pathai.com)** — AI-powered pathology
 - **[Tempus](https://tempus.com)** — AI for clinical decision support

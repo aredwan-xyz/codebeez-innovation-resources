@@ -17,11 +17,11 @@
 
 | Resource | Section | Action |
 |----------|---------|--------|
-| [Name](url) | Section Name | Add/Update/Remove |
+| [Name](https://example.com) | Section Name | Add/Update/Remove |
 
 ## Checklist
 
-- [ ] I've read the [Contributing Guide](CONTRIBUTING.md)
+- [ ] I've read the [Contributing Guide](../CONTRIBUTING.md)
 - [ ] I've checked for duplicates
 - [ ] All links are valid and accessible
 - [ ] Descriptions are under 100 characters
