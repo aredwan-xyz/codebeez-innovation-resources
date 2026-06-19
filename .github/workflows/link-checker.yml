@@ -42,7 +42,7 @@ jobs:
             --exclude "x\.com"
             "**/*.md"
           output: ./lychee/out.md
-          format: markdown
+          format: detailed
           jobSummary: false
           fail: false
         env:
