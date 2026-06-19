@@ -112,7 +112,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 - [💡 Innovation & Startups](#-innovation--startups)
   - [AI Startup Ecosystems](#ai-startup-ecosystems)
   - [Innovation Hubs](#innovation-hubs)
-  - [Emerging Areas to Watch (2025+)](#emerging-areas-to-watch-2025)
+  - [Emerging Areas to Watch (2026+)](#emerging-areas-to-watch-2026)
 - [🌐 Communities & Forums](#-communities--forums)
   - [Online Communities](#online-communities)
   - [Professional Networks](#professional-networks)
@@ -147,20 +147,21 @@ This repository is a living, community-driven collection of the **best AI tools,
 
 | Model | Provider | Context | Key Strengths |
 |-------|----------|---------|---------------|
-| **Claude 4 Opus / Sonnet / Haiku** | Anthropic | 200K tokens | Reasoning, safety, coding, long-context |
-| **GPT-4o / o3 / o4-mini** | OpenAI | 128K tokens | Multimodal, function calling, RLHF |
-| **Gemini 2.5 Pro / Flash** | Google DeepMind | 1M tokens | Multimodal, ultra-long context |
-| **Grok 3** | xAI | 128K tokens | Real-time data, reasoning |
-| **Command R+** | Cohere | 128K tokens | RAG, enterprise search |
+| **Claude Fable 5** | Anthropic | 1M tokens | Most capable; long-horizon agentic work, deep reasoning |
+| **Claude Opus 4.8 / Sonnet 4.6 / Haiku 4.5** | Anthropic | 1M tokens | Reasoning, safety, agentic coding, long-context |
+| **GPT-5.5 / GPT-5.4** | OpenAI | 1M tokens | Multimodal, agents, function calling |
+| **Gemini 3 Pro / 3 Flash** | Google DeepMind | 1M tokens | Multimodal, ultra-long context, Deep Think |
+| **Grok 4.20** | xAI | 256K tokens | Real-time data, multi-agent reasoning |
+| **Command A** | Cohere | 256K tokens | RAG, enterprise search |
 
 ### Open Source / Open Weight Models
 
 | Model | Org | Params | License |
 |-------|-----|--------|---------|
-| **Llama 3.3 / 4** | Meta | 8B–405B | Custom open |
-| **Mistral / Mixtral** | Mistral AI | 7B–8x22B | Apache 2.0 |
-| **Qwen 2.5 / QwQ** | Alibaba | 0.5B–72B | Apache 2.0 |
-| **DeepSeek-R2** | DeepSeek | 7B–671B | MIT |
+| **Llama 4 (Scout / Maverick)** | Meta | 109B–400B (MoE) | Llama 4 Community |
+| **Mistral Small 4 / Devstral 2** | Mistral AI | 119B MoE / 123B | Apache 2.0 |
+| **Qwen 3.5** | Alibaba | up to 397B (MoE) | Apache 2.0 |
+| **DeepSeek V4** | DeepSeek | up to 671B (MoE) | MIT |
 | **Phi-4** | Microsoft | 14B | MIT |
 | **Gemma 3** | Google | 1B–27B | Gemma ToS |
 | **OLMo 2** | Allen AI | 7B–13B | Apache 2.0 |
@@ -168,9 +169,9 @@ This repository is a living, community-driven collection of the **best AI tools,
 
 ### Specialized Models
 
-- **Code**: StarCoder 2, CodeLlama, DeepSeek-Coder, Qwen-Coder
+- **Code**: Qwen3-Coder, DeepSeek-Coder, Devstral 2, StarCoder 2
 - **Math**: DeepSeek-Math, Mathstral, NuminaMath
-- **Reasoning**: QwQ-32B, DeepSeek-R2, Claude 3.7 Sonnet (thinking)
+- **Reasoning**: DeepSeek V4 / R1, Claude Opus 4.8 (adaptive thinking), Grok 4.20, OpenAI o-series
 - **Embeddings**: text-embedding-3, BGE-M3, Nomic-Embed, E5-Mistral
 - **Rerankers**: Cohere Rerank 3, BGE-Reranker-v2
 
@@ -255,7 +256,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 | Platform | Best For | Free Tier |
 |----------|----------|-----------|
 | [**Anthropic API**](https://anthropic.com/api) | Claude models, safety, long-context | Yes |
-| [**OpenAI API**](https://openai.com/api) | GPT-4o, DALL-E, Whisper, embeddings | $5 credit |
+| [**OpenAI API**](https://openai.com/api) | GPT-5.5, DALL-E, Whisper, embeddings | $5 credit |
 | [**Google AI / Gemini API**](https://ai.google.dev) | Gemini, ultra-long context | Yes |
 | [**Groq**](https://groq.com) | Blazing fast inference (Llama, Mixtral) | Yes |
 | [**Together AI**](https://together.ai) | Open-source model hosting | $25 credit |
@@ -293,7 +294,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 
 ### Vision Understanding
 
-- **[GPT-4V / GPT-4o](https://openai.com)** — Multimodal understanding
+- **[GPT-5.5 (vision)](https://openai.com)** — Multimodal understanding
 - **[Claude Vision](https://anthropic.com)** — Document and image analysis
 - **[Gemini Vision](https://deepmind.google/gemini)** — Native multimodal
 - **[LLaVA](https://llava-vl.github.io)** — Open-source visual instruction tuning
@@ -740,7 +741,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 - **[Vector Institute](https://vectorinstitute.ai)** — Canadian AI excellence center
 - **[Alan Turing Institute](https://turing.ac.uk)** — UK's national AI institute
 
-### Emerging Areas to Watch (2025+)
+### Emerging Areas to Watch (2026+)
 
 ```
 🌊 Wave 1 (Now):          Copilots, RAG, AI agents, code generation
@@ -894,8 +895,9 @@ This repository is a living, community-driven collection of the **best AI tools,
 2023  ─── Llama 2: open-source changes the game
 2024  ─── Sora: text-to-video stuns the world
 2024  ─── AlphaGeometry: Olympiad gold medalist level
-2024  ─── Claude 3 Sonnet: fastest frontier model
+2025  ─── Reasoning models go mainstream: o-series, DeepSeek-R1, extended thinking
 2025  ─── Agents everywhere: AI takes actions, not just answers
+2026  ─── Million-token context & long-horizon autonomy become the norm
 ```
 
 ---
