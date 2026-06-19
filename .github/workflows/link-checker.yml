@@ -47,6 +47,8 @@ jobs:
             --exclude "sebastianraschka\.com"
             "**/*.md"
           output: ./lychee/out.md
+          format: json
+          jobSummary: false
           fail: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
