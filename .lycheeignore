@@ -1,0 +1,7 @@
+# Links that are valid in a browser but block or rate-limit automated checkers,
+# or are gated / served from slow academic hosts. Reviewed manually 2026-06-19.
+# Keep this list tight — only add URLs confirmed working by hand.
+^https://no-priors\.com
+^https://play\.ht
+^https://www\.bioinf\.jku\.at/
+^https://www\.deeplearning\.ai/short-courses/
