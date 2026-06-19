@@ -40,10 +40,13 @@ jobs:
             --exclude "linkedin\.com"
             --exclude "twitter\.com"
             --exclude "x\.com"
+            --exclude "no-priors\.com"
+            --exclude "play\.ht"
+            --exclude "bioinf\.jku\.at"
+            --exclude "deeplearning\.ai"
+            --exclude "sebastianraschka\.com"
             "**/*.md"
           output: ./lychee/out.md
-          format: detailed
-          jobSummary: false
           fail: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
