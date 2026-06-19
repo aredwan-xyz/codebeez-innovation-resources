@@ -47,8 +47,6 @@ jobs:
             --exclude "sebastianraschka\.com"
             "**/*.md"
           output: ./lychee/out.md
-          format: json
-          jobSummary: false
           fail: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -65,7 +63,11 @@ jobs:
             const fs = require('fs');
             const { owner, repo } = context.repo;
             const title = '🔗 Broken Links Report';
-            const failed = '${{ steps.lychee.outputs.exit_code }}' !== '0';
+            // lychee-action sets exit_code only on a non-zero (broken-link) run;
+            // an empty/0 value means healthy. Treat only a positive code as failed
+            // so the issue actually closes when links are fine.
+            const code = parseInt('${{ steps.lychee.outputs.exit_code }}', 10);
+            const failed = Number.isInteger(code) && code > 0;
 
             const open = await github.paginate(github.rest.issues.listForRepo, {
               owner, repo, state: 'open', labels: 'links', per_page: 100,
