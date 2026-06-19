@@ -51,6 +51,21 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Re-run lychee directly (binary is on PATH after the action) in detailed
+      # mode so the actual failing URLs land in a file we control and can post.
+      - name: Detailed link report
+        if: always()
+        run: |
+          mkdir -p ./lychee
+          lychee --no-progress --timeout 30 --max-retries 3 --max-concurrency 8 \
+            --accept 200..=308,401,403,406,429 \
+            --exclude-mail \
+            --exclude "linkedin\.com" --exclude "twitter\.com" --exclude "x\.com" \
+            --exclude "no-priors\.com" --exclude "play\.ht" --exclude "bioinf\.jku\.at" \
+            --exclude "deeplearning\.ai" --exclude "sebastianraschka\.com" \
+            --format detailed "**/*.md" > ./lychee/detail.txt 2>&1 || true
+          echo "===== lychee detail ====="; cat ./lychee/detail.txt
+
       # Maintain a SINGLE rolling "Broken Links Report" issue instead of opening
       # a new one every run. Consolidates/closes any duplicates, and closes the
       # issue automatically once all links are healthy. Skipped on PRs (fork PRs
@@ -75,7 +90,7 @@ jobs:
 
             if (failed) {
               let report = '_Report file not found._';
-              try { report = fs.readFileSync('./lychee/out.md', 'utf8'); } catch (e) {}
+              try { report = '```\n' + fs.readFileSync('./lychee/detail.txt', 'utf8') + '\n```'; } catch (e) {}
               const body = `${report}\n\n_Last updated: ${new Date().toISOString()} · `
                 + `[run log](${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId})_`;
 
