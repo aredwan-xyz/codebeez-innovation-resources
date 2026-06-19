@@ -45,6 +45,8 @@ jobs:
             --exclude "deeplearning\.ai"
             --exclude "sebastianraschka\.com"
             --exclude "sciencedirect\.com"
+            --exclude "a16z\.com"
+            --exclude "fda\.gov"
             "**/*.md"
           output: ./lychee/out.md
           fail: false
