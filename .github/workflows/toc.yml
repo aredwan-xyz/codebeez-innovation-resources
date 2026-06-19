@@ -35,3 +35,9 @@ jobs:
         with:
           commit_message: 'docs: auto-update table of contents [skip ci]'
           file_pattern: README.md
+          # Attribute the auto-commit to the maintainer so it appears as their
+          # activity. The email must be verified on the GitHub account for it
+          # to count toward the contribution graph.
+          commit_author: Abid Redwan <abid.redpro@gmail.com>
+          commit_user_name: Abid Redwan
+          commit_user_email: abid.redpro@gmail.com
