@@ -1,6 +1,6 @@
 # Project Showcase
 
-> Part of **[Awesome AI, Innovation & Technology](../README.md)** by [CodeBeez Innovation](https://codebeez.xyz) · [Abid Redwan](https://aredwan.com)
+> Part of **[CodeBeez Ultimate Innovation & Technology Resources](../README.md)** by [CodeBeez Innovation](https://codebeez.xyz) · [Abid Redwan](https://aredwan.com)
 
 Community-built AI projects using the resources in this repository.
 

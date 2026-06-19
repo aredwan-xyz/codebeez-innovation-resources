@@ -1,4 +1,4 @@
-# Awesome AI Innovation · CodeBeez Innovation (codebeez.xyz) · Abid Redwan (aredwan.com)
+# CodeBeez Ultimate Innovation & Technology Resources · CodeBeez (codebeez.xyz) · Abid Redwan (aredwan.com)
 name: Welcome
 
 on:
@@ -20,12 +20,12 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: >
-            👋 Thanks for opening your first issue in **Awesome AI Innovation**!
+            👋 Thanks for opening your first issue in **CodeBeez Ultimate Innovation & Technology Resources**!
             A maintainer will take a look soon. If you're reporting a broken link
             or suggesting a resource, the issue templates help us triage faster.
             — *CodeBeez Innovation*
           pr-message: >
-            🎉 Thanks for your first contribution to **Awesome AI Innovation**!
+            🎉 Thanks for your first contribution to **CodeBeez Ultimate Innovation & Technology Resources**!
             Please make sure your additions follow [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md):
             alphabetical/section placement, a one-line description, and a working link.
             CI will check links and formatting automatically. — *CodeBeez Innovation*

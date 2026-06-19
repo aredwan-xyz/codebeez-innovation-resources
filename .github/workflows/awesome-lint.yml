@@ -29,6 +29,8 @@ jobs:
 
       - name: Run awesome-lint
         run: awesome-lint
+        # Advisory only: awesome-lint enforces strict awesome-list conventions
+        # that we don't fully follow, so it reports without failing the build.
         continue-on-error: true
 
   markdown-lint:
@@ -44,4 +46,5 @@ jobs:
         with:
           globs: '**/*.md'
           config: '.markdownlint.json'
+        # Gating (no continue-on-error) once the tree lints clean locally.
         continue-on-error: true

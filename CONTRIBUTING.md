@@ -1,4 +1,4 @@
-# Contributing to Awesome AI, Innovation & Technology
+# Contributing to CodeBeez Ultimate Innovation & Technology Resources
 
 > A **[CodeBeez Innovation](https://codebeez.xyz)** project · Maintained by **[Abid Redwan](https://aredwan.com)** · [GitHub](https://github.com/aredwan-xyz)
 
@@ -27,7 +27,7 @@ This project adheres to our [Code of Conduct](CODE_OF_CONDUCT.md). By participat
 
 ### 🐛 Reporting Issues
 
-Found a broken link? Know of a better resource? Open an [issue](https://github.com/aredwan-xyz/codebeez-ultimate-innovation/issues/new/choose) and use the appropriate template.
+Found a broken link? Know of a better resource? Open an [issue](https://github.com/aredwan-xyz/codebeez-innovation-resources/issues/new/choose) and use the appropriate template.
 
 ### ✨ Adding a New Resource
 
@@ -142,7 +142,7 @@ Content here...
 
 ## Questions?
 
-Open an [issue](https://github.com/aredwan-xyz/codebeez-ultimate-innovation/issues) or start a [discussion](https://github.com/aredwan-xyz/codebeez-ultimate-innovation/discussions). We're happy to help!
+Open an [issue](https://github.com/aredwan-xyz/codebeez-innovation-resources/issues) or start a [discussion](https://github.com/aredwan-xyz/codebeez-innovation-resources/discussions). We're happy to help!
 
 ---
 

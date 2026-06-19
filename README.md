@@ -10,6 +10,8 @@
  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═════╝ ╚══════╝╚══════╝╚══════╝
 ```
 
+<a id="top"></a>
+
 # ⚡️ CodeBeez Ultimate Innovation & Technology Resources 📜
 
 **The most comprehensive, curated resource hub for the age of artificial intelligence.**
@@ -936,7 +938,7 @@ This list is released under **[CC0 1.0 Universal](LICENSE)** — no rights reser
 
 <div align="center">
 
-**[⬆ Back to Top](#-awesome-ai-innovation--technology)**
+**[⬆ Back to Top](#top)**
 
 Made with ❤️ by **[CodeBeez Innovation](https://codebeez.xyz)** · Maintained by **[Abid Redwan](https://aredwan.com)** · [Star ⭐ to support](https://github.com/aredwan-xyz/codebeez-innovation-resources)
 

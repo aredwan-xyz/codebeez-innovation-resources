@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this resource collection, please cite it as below."
+title: "CodeBeez Ultimate Innovation & Technology Resources"
+abstract: >-
+  A comprehensive, community-driven, curated collection of the best AI tools,
+  research, learning resources, communities, datasets, and innovations across
+  every domain.
+type: dataset
+authors:
+  - family-names: Redwan
+    given-names: Abid
+    website: "https://aredwan.com"
+  - name: "CodeBeez"
+    website: "https://codebeez.xyz"
+repository-code: "https://github.com/aredwan-xyz/codebeez-innovation-resources"
+url: "https://github.com/aredwan-xyz/codebeez-innovation-resources"
+license: CC0-1.0
+version: "1.0.0"
+date-released: "2026-06-19"
+keywords:
+  - artificial-intelligence
+  - machine-learning
+  - awesome-list
+  - llm
+  - resources
