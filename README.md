@@ -687,6 +687,7 @@ This repository is a living, community-driven collection of the **best AI tools,
 - **[Stratechery](https://stratechery.com)** — Ben Thompson on tech strategy (AI-heavy)
 - **[Ahead of AI](https://magazine.sebastianraschka.com)** — Sebastian Raschka on ML research
 - **[AI Supremacy](https://aisupremacy.substack.com)** — Weekly AI intelligence brief
+- **[AI Weekly](https://aiweekly.co/)** — Expert-reading signals and AI news, published three times weekly
 - **[Ben's Bites](https://bensbites.co)** — Daily AI news digest
 
 ### Must-Read Blogs
