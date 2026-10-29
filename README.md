@@ -12,11 +12,9 @@
 
 <a id="top"></a>
 
-# ⚡️ CodeBeez Ultimate Innovation & Technology Resources 📜
+# CodeBeez Innovation & Technology Resources
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=F7C948&center=true&vCenter=true&width=820&height=55&lines=The+Ultimate+AI+Resource+Hub;500%2B+Tools%2C+Models%2C+Datasets+%26+Communities;Curated+by+humans.+Amplified+by+AI.;Built+for+builders." alt="The Ultimate AI Resource Hub" />
-
-**The most comprehensive, curated resource hub for the age of artificial intelligence.**
+**A directory of AI tools, research, datasets and communities.**
 
 > Crafted by **[CodeBeez](https://codebeez.xyz)** · Maintained by **[Abid Redwan](https://aredwan.com)**
 
@@ -40,7 +38,9 @@
 
 > **"The question isn't whether AI will change the world — it's whether you'll be part of that change."**
 
-This repository is a living, community-driven collection of the **best AI tools, research, learning resources, communities, datasets, and innovations** across every domain. Whether you're a researcher, engineer, product builder, student, or curious mind — this is your launchpad.
+This repository is a maintained reference directory for AI tools, research, learning resources, communities and datasets. Inclusion is not a product endorsement; check current availability, terms and suitability at the linked source.
+
+**Choose one starting point:** use [AI Mastery](https://github.com/aredwan-xyz/ai-mastery-ultimate-resources) for a structured learning path. Use this complementary directory when looking up tools or research for a specific project. These are curated references, not evidence that every listed system was built or tested by CodeBeez.
 
 ---
 
